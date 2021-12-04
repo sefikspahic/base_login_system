@@ -107,6 +107,7 @@ export default function Final() {
           </Button>
         </CardActions>
       </Card>
+      <div isTimedOut={isTimedOut}></div>
     </div>
   );
 }
