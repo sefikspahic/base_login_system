@@ -4,7 +4,7 @@ import { Card } from "@material-ui/core";
 import { CardContent } from "@material-ui/core";
 import { CardMedia } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
-import homeImage from "../assets/images/homeImage.jpg";
+import mistralImg from "../assets/images/mistralImg.jpg";
 import { Button } from "@material-ui/core";
 import auth from "../auth/auth-helpers";
 import IdleTimer from "react-idle-timer";
@@ -88,7 +88,7 @@ export default function Final() {
         </Typography>
         <CardMedia
           className={classes.media}
-          image={homeImage}
+          image={mistralImg}
           title="Congratulations"
         />
         <CardContent>
