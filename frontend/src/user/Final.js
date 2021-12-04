@@ -44,7 +44,6 @@ export default function Final() {
   });
 
   const [timeout, setTimeout] = useState(600000);
-  const [isTimedOut, setIsTimedOut] = useState(false);
   const idleTimer = useRef(null);
 
   useEffect(() => {
@@ -55,12 +54,12 @@ export default function Final() {
 
   const action = (e) => {
     console.log("User did something", e);
-    setIsTimedOut(false);
+    
   };
 
   const active = (e) => {
     console.log("User is active", e);
-    setIsTimedOut(false);
+
   };
 
   const idle = (e) => {
@@ -81,7 +80,6 @@ export default function Final() {
         onIdle={idle}
         debounce={250}
         timeout={timeout}
-        isTimedOut={isTimedOut}
       />
       <Card className={classes.card}>
         <Typography variant="h4" className={classes.title}>
