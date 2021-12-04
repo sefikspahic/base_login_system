@@ -42,24 +42,20 @@ export default function Final() {
     userName: "",
     email: "",
   });
-
   const [timeout, setTimeout] = useState(600000);
   const idleTimer = useRef(null);
 
   useEffect(() => {
     let token = JSON.parse(localStorage.getItem("token"));
-
     setValues({ userName: token.user.userName, email: token.user.email });
   }, []);
 
   const action = (e) => {
     console.log("User did something", e);
-    
   };
 
   const active = (e) => {
     console.log("User is active", e);
-
   };
 
   const idle = (e) => {
