@@ -81,6 +81,7 @@ export default function Final() {
         onIdle={idle}
         debounce={250}
         timeout={timeout}
+        isTimedOut={isTimedOut}
       />
       <Card className={classes.card}>
         <Typography variant="h4" className={classes.title}>
@@ -107,7 +108,7 @@ export default function Final() {
           </Button>
         </CardActions>
       </Card>
-      <div isTimedOut={isTimedOut}></div>
+     
     </div>
   );
 }
